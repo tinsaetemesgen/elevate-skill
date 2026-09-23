@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query example</title>
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .box {
+        padding: 20px;
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        background-color: darkred;
+      }
+
+      @media (min-width: 600px) {
+        .container {
+          flex-direction: row;
+        }
+
+        .box {
+            flex: 1;
+            background-color: darkblue;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+            flex-direction: row;
+        }
+        .box {
+            flex: 1;
+            background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        Box 1
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
+          tenetur sunt asperiores nam hic molestiae voluptatum nihil iste dolore
+          doloremque ducimus explicabo aspernatur doloribus eum, fuga
+          praesentium consequuntur eligendi itaque?
+        </p>
+      </div>
+      <div class="box">
+        Box 2
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
+          tenetur sunt asperiores nam hic molestiae voluptatum nihil iste dolore
+          doloremque ducimus explicabo aspernatur doloribus eum, fuga
+          praesentium consequuntur eligendi itaque?
+        </p>
+      </div>
+      <div class="box">
+        Box 3
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
+          tenetur sunt asperiores nam hic molestiae voluptatum nihil iste dolore
+          doloremque ducimus explicabo aspernatur doloribus eum, fuga
+          praesentium consequuntur eligendi itaque?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storing object in localstorage</title>
+  </head>
+  <body>
+    <h1>Student Registration</h1>
+
+    <input type="text" id="name" placeholder="Name" />
+    <input type="number" id="age" placeholder="Age" />
+
+    <button id="saveBtn">Save</button>
+    <button id="load">Load</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+      document.getElementById("saveBtn").addEventListener("click", function () {
+        const student = {
+          name: document.getElementById("name").value,
+          age: document.getElementById("age").value,
+        };
+
+        localStorage.setItem("student", JSON.stringify(student));
+
+        document.getElementById("result").textContent = "Saved sucessfully";
+      });
+
+      document.getElementById("load").addEventListener("click", function () {
+        const saved = JSON.parse(localStorage.getItem("student"));
+
+        document.getElementById("result").textContent =
+          `Name: ${saved.name}, Age:  ${saved.age}`;
+      });
+    </script>
+  </body>
+</html>

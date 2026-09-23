@@ -1,0 +1,48 @@
+.block-box {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.inline-box {
+  display: inline;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.inline-block-box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.none {
+    display: none;
+}
+
+
+.parent {
+    width: 500px;
+    height: 300px;
+    border: 2px solid green;
+
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 80px;
+    height: 80px;
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

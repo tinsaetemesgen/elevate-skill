@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local storage</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #name {
+        padding: 20px;
+        font-size: 20px;
+        color: #333;
+      }
+
+      #saveBtn {
+        margin: 12px;
+        width: 100px;
+        height: 60px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="name" placeholder="Enyer your name" />
+    <button id="saveBtn">Save</button>
+
+    <h1 id="display"></h1>
+
+    <script>
+      const input = document.getElementById("name");
+      const button = document.getElementById("saveBtn");
+      const result = document.getElementById("display");
+
+      button.addEventListener("click", function () {
+        const name = input.value;
+        localStorage.setItem("name", name); // saving the input name(value)
+
+        result.textContent = "Your name is: " + name;
+      });
+
+      const savedName = localStorage.getItem("name"); // get the saved name
+
+      if (savedName) {
+        result.textContent = "Your name is: " + savedName;
+      }
+    </script>
+  </body>
+</html>

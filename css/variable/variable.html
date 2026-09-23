@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>variable example</title>
+
+    <style>
+        :root {
+            --bg-color: steelblue;
+            --text-color: white;
+            --spacing: 20px;
+            --border-color: red;
+        }
+
+        .card {
+            width: 800px;
+            background-color: var(--bg-color);
+            padding: var(--spacing);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>My Card</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi magni
+        iste repudiandae! Eaque itaque facere, esse voluptatem cum error
+        expedita aspernatur magnam, labore sed eum, fugiat molestias! Et,
+        aperiam cum.
+      </p>
+      <button class="btn">Click me</button>
+    </div>
+  </body>
+</html>

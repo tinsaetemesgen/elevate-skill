@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM and Event</title>
+  </head>
+  <body>
+    <h1 id="myHeader">0</h1>
+    <button id="myButton" onclick="increase()">Count</button>
+
+    <script>
+      const heading = document.getElementById("myHeader");
+      const button = document.getElementById("myButton");
+
+      let count = 0;
+      function increase() {
+        count++
+        heading.textContent = count
+      }
+    </script>
+  </body>
+</html>

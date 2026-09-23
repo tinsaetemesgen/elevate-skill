@@ -1,0 +1,54 @@
+.first-header {
+    color: red;
+    font-size: 40px;
+}
+
+.first-p {
+    color: blue;
+}
+
+#second-p {
+    color: aqua;
+    font-size: 22px;
+}
+
+#second-header {
+    color: yellow;
+
+}
+
+.box {
+    background-color: black;
+}
+
+.box p {
+    color: aliceblue;
+}
+
+input[type="email"] {
+    border: 1px solid red;
+}
+input[type="password"] {
+    border: 1px solid blue;
+}
+
+form button {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+}
+
+form button:hover {
+    background-color: brown;
+}
+
+form button:focus {
+    background-color: red;
+}
+form button:disabled {
+    background-color: gray;
+}
+
+input::placeholder {
+    color: aquamarine;   
+}
